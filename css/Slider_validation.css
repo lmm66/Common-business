@@ -1,0 +1,45 @@
+/* 滑块验证容器 */
+#dragContainer {
+    position: relative;
+    display: inline-block;
+    background: #e8e8e8;
+    width: 300px;
+    height: 33px;
+    border: 2px solid #e8e8e8;
+}
+
+/* 滑块左边部分绿色背景 */
+#dragBg {
+    position: absolute;
+    background-color: #7ac23c;
+    width: 0px;
+    height: 100%;
+}
+
+/* 滑块验证容器文字 */
+#dragText {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 33px;
+    /* 文字不允许选中 */
+    user-select: none;
+}
+
+#dragHandler {
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    cursor: move;
+}
+
+/* 滑块初始化背景 */
+.dargHandlerBg {
+    background: #fff no-repeat center url();
+}
+
+/* 滑块成功时的背景 */
+.dargHandlerOkBg {
+    background: #fff no-repeat center url();
+}
