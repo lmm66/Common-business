@@ -19,6 +19,7 @@ window.onload = function () {
   }
 
   function onDragHandlerMove(e) {
+    // clientX 属性返回鼠标指针的水平坐标（根据当前窗口）
     let left = e.clientX - dragHandler.clientWidth / 2
     if (left < 0) {
       left = 0
@@ -50,6 +51,7 @@ window.onload = function () {
     dragHandler.removeEventListener('mousedown', onDragHandlerDown)
     document.removeEventListener('mousemove', onDragHandlerMove)
     document.removeEventListener('mouseup', onDragHandlerUp)
+    // 设置跳转
     window.location.href =
       'https://blog.csdn.net/m0_53375764?spm=1000.2115.3001.5343'
   }
